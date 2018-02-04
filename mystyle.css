@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+header{
+    height: 100px;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.nav_bar{
+  background-color: #696969;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav_bar li{
+  display: inline;
+}
+
+.nav_bar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav_bar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.main {
+    margin-top: 60px;
+}
+
+.container {
+}
+
+#about {
+  height: 1000px;
+  display: block;
+  position: static;
+  background-color: #ffc266;
+}
+
+#skills {
+  height: 1000px;
+  display: block;
+  position: static;
+  background-color: #ff6666;
+}
+
+#projects {
+  height: 1000px;
+  display: block;
+  position: static;
+  background-color: #00cc99;
+}
+
+#contact {
+  height: 1000px;
+  display: block;
+  position: static;
+  background-color: #ffcc00;
+}
