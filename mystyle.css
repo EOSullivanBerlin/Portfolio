@@ -11,9 +11,11 @@ header{
     height: 100px;
     font-weight: bold;
     font-size: 20px;
+    background-color: #696969;
 }
 
 footer{
+  text-align: center;
   height: 200px;
   background-color: #696969;
 }
@@ -88,4 +90,60 @@ body {
   display: block;
   position: static;
   background-color: #ffcc00;
+}
+
+/* Bar chart */
+
+#graph {
+  margin: 30px;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  width: 50%;
+  background-color: rgba(128, 128, 128, 0.4)
+}
+ul.graph {
+  list-style-type: none;
+}
+
+ul.graph li {
+  margin-bottom: .5em;
+  padding: .2em;
+  background: black;
+  color: #fff;
+}
+
+ul.graph li.ruby {
+  width: 60%;
+}
+
+ul.graph li.ruby:hover {
+  background: #ddd;
+  color: black;
+}
+
+ul.graph li.javascript {
+  width: 75%;
+}
+
+ul.graph li.javascript:hover {
+  background: #ddd;
+  color: black;
+}
+
+ul.graph li.clojure {
+  width: 20%;
+}
+
+ul.graph li.clojure:hover {
+  background: #ddd;
+  color: black;
+}
+
+ul.graph li.mysql {
+  width: 55%;
+}
+
+ul.graph li.mysql:hover {
+  background: #ddd;
+  color:black;
 }
