@@ -9,6 +9,8 @@ h1 {
 
 header{
     height: 100px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 footer{
@@ -54,6 +56,10 @@ body {
 }
 
 .container {
+}
+
+#holder {
+  padding-top: 60px;
 }
 
 #about {
