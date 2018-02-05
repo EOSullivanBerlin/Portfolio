@@ -8,7 +8,7 @@
   <body>
     <div class='main'>
       <header>
-        <h1>EOIN O SULLIVAN | WEB DEVELOPER</h1>
+        <h1 id='header'>EOIN O SULLIVAN | WEB DEVELOPER</h1>
       </header>
 
       <ul class='nav_bar'>
@@ -18,28 +18,40 @@
         <li><a href='#work'>WORK</a></li>
       </ul>
       <div id='container'>
-
         <div id='about'>
           <div id='holder'>
           <h1>ABOUT EOIN</h1>
-          <p>My career began ...</p>
+          <p id='blerb'>My career began ...</p>
+          <p id='quote'>Keep it simple stupid</p>
+          <img id='img-eoin' src='square.jpg' alt='picture of Eoin' />
           </div>
         </div>
 
         <div id='skills'>
           <div id='holder'>
-            <h1>SKILLS</h1>
-            <p>I am a jack of many key technologies and master of a growing list. I love solving problems and creating beaufitful websites.</p>
+              <h1>SKILLS</h1>
+              <p id='intro'>I am a jack of many key technologies and master of a growing list. I love solving problems and creating beaufitful websites. My current tools of choice are writing JavaScript, Ruby, CSS and HTML in Atom. I use Github for version control and TDD. I pride mayself on writting clean reuseable and maintainable code. </p>
 
-            <h2>Languges</h2>
-            <div id='graph'>
-            <ul class='graph'>
-              <li class='ruby'>RUBY</li>
-              <li class='javascript'>JAVASCRIPT</li>
-              <li class='mysql'>MYSQL</li>
-              <li class='clojure'>CLOJURE</li>
-            </ul>
-          </div>
+            <div class='graph-parent'>
+              <h2>LANGUAGES</h2>
+              <div id='graph'>
+                <ul class='graph'>
+                  <li class='ruby'>RUBY</li>
+                  <li class='javascript'>JAVASCRIPT</li>
+                  <li class='mysql'>MYSQL</li>
+                  <li class='clojure'>CLOJURE</li>
+                </ul>
+              </div>
+              <p>Proficiency</p>
+            </div>
+            <div id='text'>
+              <h2>CODE CRAFTMANSHIP<h2>
+              <p>
+                  >TEST DRVIVEN DEVELOPMENT <br />
+                  >OBJECT ORINATED DESIGN <br />
+                  >AGILE METHODOLOGIES <br />
+              </p>
+            </div>
           </div>
         </div>
 
@@ -58,7 +70,7 @@
       </div>
       <footer>
 
-        <h1>THANKS</h1>
+        <h1 id='header'>THANKS</h1>
         <p>What to talk about something?</p>
         <a href='#about' >Contact Me</a>
         <p id='tiny_script'>Made in Germany by Eoin O Sullivan.</p>

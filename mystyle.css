@@ -1,18 +1,27 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 h1 {
   text-align: center;
+  color: white;
+}
+
+h1#header{
+  color: black;
+}
+h2 {
+  border-bottom: 3px solid black;
 }
 
 header{
     height: 100px;
     font-weight: bold;
     font-size: 20px;
-    background-color: #696969;
 }
+
 
 footer{
   text-align: center;
@@ -58,10 +67,75 @@ body {
 }
 
 .container {
+  background-color: rgba(1 1 1 0.5);
 }
+
+/* grid skills */
 
 #holder {
   padding-top: 60px;
+  margin: 0 auto;
+  height: 900px;
+  display: grid;
+  max-width: 900px;
+  grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "header header header header"
+  "subheader subheader subheader subheader"
+  "subsub subsub subsub subsub"
+  "left left right right"
+  "left left right right"
+  "left left right right";
+   grid-gap: 10px 10px;
+   justify-items: stretch;
+   align-tiems: stretch;
+}
+
+.graph-parent {
+  grid-area: left;
+}
+
+#text {
+  grid-area: right;
+}
+
+#intro {
+  border-top: 3px solid black;
+}
+
+#holder h1{
+  font-size: 70px;
+  grid-area: header;
+  justify-self: center;
+  align-self: center;
+}
+
+#holder p#intro{
+  grid-area: subheader;
+}
+
+/* grid About */
+
+#img-eoin {
+  grid-area: subheader;
+  justify-self: center;
+  align-self: center;
+  background-color: black;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+#quote {
+  grid-area: right;
+  justify-self: end;
+  align-self: end;
+  background-color: red;
+}
+#blerb {
+  grid-area: subsub;
+  justify-self: center;
+  align-self: center;
 }
 
 #about {
@@ -95,10 +169,9 @@ body {
 /* Bar chart */
 
 #graph {
-  margin: 30px;
   border-left: 3px solid black;
   border-bottom: 3px solid black;
-  width: 50%;
+  width: 100%;
   background-color: rgba(128, 128, 128, 0.4)
 }
 ul.graph {
@@ -107,7 +180,6 @@ ul.graph {
 
 ul.graph li {
   margin-bottom: .5em;
-  padding: .2em;
   background: black;
   color: #fff;
 }
@@ -131,7 +203,7 @@ ul.graph li.javascript:hover {
 }
 
 ul.graph li.clojure {
-  width: 20%;
+  width: 30%;
 }
 
 ul.graph li.clojure:hover {
