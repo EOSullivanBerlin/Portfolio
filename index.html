@@ -32,7 +32,7 @@
       <div id='container'>
         <div id='about'>
           <div id='holder'>
-          <h1>ABOUT</h1>
+          <h1 id='header'>ABOUT</h1>
           <h2>My Story</h2>
           <p class='subheader'>I have just graduated from Makers academy, an extremely intensive twelve-week Development Bootcamp. This course emphasised object orientated Design, Test Driven Development and agile Methodologies.
             I have hands on experience in creating single page application with JavaScript, HTMl, CSS and am familiar wisth React.js. Test-Driven Development is my compass when I have a programming problem. I ardently follow the red, green and refactor cycle.
@@ -44,11 +44,11 @@
         <div id='skills'>
           <div id='grid-graph'>
             <div class='base-block' id='pro'><h4 id='rotate'>proficiency</h4></div>
-            <div class='white-block' id='css'><p id='graph-element'>css</p></div>
-            <div class='white-block' id='html'><p id='graph-element'>html</p></div>
-            <div class='white-block' id='js'><p id='graph-element'>js</p></div>
-            <div class='white-block' id='ruby'><p id='graph-element'>ruby</p></div>
-            <div class='white-block' id='mysql'><p id='graph-element'>mysql<p></div>
+            <div class='white-block' id='css'></div>
+            <div class='white-block' id='html'></div>
+            <div class='white-block' id='js'></div>
+            <div class='white-block' id='ruby'></div>
+            <div class='white-block' id='mysql'></div>
             <p class='graph-d' id='css-text'>CSS</p>
             <p class='graph-d' id='html-text'>HTML</p>
             <p class='graph-d' id='js-text'>JS</p>
@@ -58,25 +58,47 @@
         </div>
 
             <div id='projects'>
-              <div id='holder'>
-              <h1>PROJECTS</h1>
-              <img id='img-eoin' src='computer.jpg' alt='computer' />
+              <h2>PROJECTS</h2>
 
-              <div class='left'>
-                  <h2>COMMANDOS</h2> <br />
-                  <p>
-                  A bash tool to help new devlopers learn. Tech: Ruby, Shell, Rspec and Aruba<br />
-                  EVIL NOTES<br />
-                  A single page web app that allows a user to make notes. No libraries were used and we created our own testing framework. Tech: JavaScript<br />
-                  ACEBOOK<br />
-                  A group project that clones Facebook. Tech: Ruby, Rails, PostgreSQL<br />
-              </div>
+              <div id='holder-num-float'>
+
+                  <h5 class='background1'>01</h5>
+                  <div class='content1'>
+                    <h2>COMMANDOS</h2> <br />
+                    <p>
+                      A bash tool to help new devlopers learn. Tech: Ruby, Shell, Rspec and Aruba<br />
+                      EVIL NOTES<br />
+                  </div>
+
+                  <h5 class='background2'>02</h5>
+                  <div class='content2'>
+                    <h2>COMMANDOS</h2> <br />
+                    <p>
+                      A bash tool to help new devlopers learn. Tech: Ruby, Shell, Rspec and Aruba<br />
+                  </div>
+
+                  <h5 class='background3'>03</h5>
+                  <div class='content3'>
+                    EVIL NOTES<br />
+                    A single page web app that allows a user to make notes. No libraries were used and we created our own testing framework. Tech: JavaScript<br />
+                  </div>
+
+                  <h5 class='background4'>04</h5>
+                  <div class='content4'>
+                    ACEBOOK<br />
+                    A group project that clones Facebook. Tech: Ruby, Rails, PostgreSQL<br />
+                  </div>
+
+
+
+
+              <img id='img-eoin' src='computer.jpg' alt='computer' />
             </div>
           </div>
 
           <div id='work'>
             <div id='holder'>
-              <h1>WORK</h1>
+              <h1 id='header'>WORK</h1>
               <div class='left'> <h2>MAKERS ACADEMY</h2> <br />
                 <p>Europes leading Web Dev Bootcamp 2017<br />
                 SALFORD UNIVERSITY<br />
@@ -95,9 +117,13 @@
       </div>
       <footer>
 
-        <h1 id='header'>THANKS</h1>
+        <h1>THANKS</h1>
+
         <p>What to talk about something?</p>
         <a href='#about' >Contact Me</a>
+        <a href='https://github.com/EOSullivanBerlin'>Github</a>
+        <a href='https://www.linkedin.com/in/eoin-o-sullivan-00453a154/'>Linked In<a/>
+
         <p id='tiny_script'>Made in Germany by Eoin O Sullivan.</p>
       </footer>
     </div>

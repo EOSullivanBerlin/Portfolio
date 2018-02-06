@@ -13,17 +13,28 @@ h3{
 h3{
     font-size: 70px;
   }
+  .graph-d{
+    font-size: 30px;
+  }
 }
 
 @media all and (max-width: 959px) and (min-width: 600px) {
 h3{
     font-size: 8vw;
   }
+
+.graph-d{
+  font-size: 18px;
+}
 }
 
 @media all and (max-width: 599px) and (min-width: 50px) {
 h3{
     font-size: 8vw;
+  }
+
+  .graph-d{
+    font-size: 10px;
   }
 }
 
@@ -32,15 +43,19 @@ h1 {
   text-align: center;
   color: white;
   padding: 40px;
-  border: 4px solid white;
 }
 
 h1#header{
   color: white;
-
+  border: 3px solid white;
 }
 h2 {
   border-bottom: 3px solid black;
+}
+
+h5{
+  color: yellow;
+  font-size: 50px;
 }
 
 header{
@@ -63,7 +78,7 @@ body {
 
 .nav_bar{
   background-color: black;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   height: 40px;
@@ -158,28 +173,39 @@ body {
 }
 
 
-/* grid graph */
+/*Skills */
+
+#skills {
+  display: block;
+  position: static;
+  height: 1000px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+/* grid graph Skills */
 
 #grid-graph {
-  margin: 0 auto;
-  height: 900px;
-  display: grid;
+  grid-area: left;
   max-width: 900px;
-  grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 50px / 50px 1fr 1fr 1fr 1fr 1fr 20px;
+  height: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 50px / 50px 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "pro blank3 blank4 js blank blank ."
-  "pro blank3 html js blank blank ."
-  "pro css html js blank blank ."
-  "pro css html js ruby blank2 ."
-  "pro css html js ruby blank2 ."
-  "pro css html js ruby mysql ."
-  "pro css html js ruby mysql ."
-  "pro css html js ruby mysql ."
-  "pro css html js ruby mysql ."
-  ". css-text html-text js-text ruby-text mysql-text .";
+  "pro blank3 blank4 blank4 blank blank"
+  "pro blank3 blank5 js blank blank"
+  "pro blank3 html js blank blank"
+  "pro css html js ruby blank2"
+  "pro css html js ruby blank2"
+  "pro css html js ruby mysql"
+  "pro css html js ruby mysql"
+  "pro css html js ruby mysql"
+  "pro css html js ruby mysql"
+  ". css-text html-text js-text ruby-text mysql-text";
    justify-items: stretch;
    align-tiems: stretch;
-   grid-gap: 40px;
+   grid-gap: 15px;
 }
 
 .white-block {
@@ -240,7 +266,6 @@ h4#rotate {
 }
 
 .graph-d {
-  font-size: 20px;
   font-weight: bold
   text-align: center;
   color: white;
@@ -266,6 +291,86 @@ h4#rotate {
 
 #mysql-text {
   grid-area: mysql-text;
+}
+
+
+/* holder-num-float  / Projects */
+#holder-num-float {
+  background-color: white;
+  padding-top: 60px;
+  margin: 0 auto;
+  height: 2000px;
+  display: grid;
+  max-width: 900px;
+  grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "header header blank blank"
+  "subheader subheader blank blank"
+  "subsub subsub subsub subsub"
+  "left left right right"
+  "left left right right"
+  "left left right right";
+   grid-gap: 20px 20px;
+   justify-items: stretch;
+   align-tiems: stretch;
+}
+
+/* get an element to act as anothers background */
+
+.content1{
+    font-size: 26px;
+    font-weight: bold;
+    grid-area: header;
+}
+
+.background1{
+  font-size: 120px;
+    grid-area: header;
+}
+
+.content2{
+    align-self: end ;
+    justify-self: end;
+    font-size: 26px;
+    font-weight: bold;
+    grid-area: blank;
+}
+
+.background2{
+    align-self: end;
+    justify-self: end;
+    font-size: 120px;
+    grid-area: blank;
+}
+
+.content3{
+    align-self: start;
+    justify-self: end;
+    font-size: 26px;
+    font-weight: bold;
+    grid-area: left;
+}
+
+.background3{
+  align-self: start;
+  justify-self: end;
+  font-size: 120px;
+    grid-area: left;
+}
+
+.content4{
+    align-self: center;
+    justify-self: center;
+    font-size: 26px;
+    font-weight: bold;
+    grid-area: right;
+}
+
+.background4{
+  align-self: center;
+  justify-self: center;
+  font-size: 120px;
+    grid-area: right;
 }
 
 
@@ -370,18 +475,11 @@ h4#rotate {
   background-image: url("cliffs.jpg");
 }
 
-#skills {
-  height: 1000px;
-  display: block;
-  position: static;
-  background-color: black;
-}
-
 #projects {
-  height: 1000px;
+  height: 2000px;
   display: block;
   position: static;
-  background-color: #00cc99;
+  background-color: #white;
 }
 
 #work{
@@ -389,58 +487,4 @@ h4#rotate {
   display: block;
   position: static;
   background-color: #ffcc00;
-}
-
-/* Bar chart */
-
-#graph {
-  border-left: 3px solid black;
-  border-bottom: 3px solid black;
-  width: 100%;
-  background-color: rgba(128, 128, 128, 0.4)
-}
-ul.graph {
-  list-style-type: none;
-}
-
-ul.graph li {
-  margin-bottom: .5em;
-  background: black;
-  color: #fff;
-}
-
-ul.graph li.ruby {
-  width: 60%;
-}
-
-ul.graph li.ruby:hover {
-  background: #ddd;
-  color: black;
-}
-
-ul.graph li.javascript {
-  width: 75%;
-}
-
-ul.graph li.javascript:hover {
-  background: #ddd;
-  color: black;
-}
-
-ul.graph li.clojure {
-  width: 30%;
-}
-
-ul.graph li.clojure:hover {
-  background: #ddd;
-  color: black;
-}
-
-ul.graph li.mysql {
-  width: 55%;
-}
-
-ul.graph li.mysql:hover {
-  background: #ddd;
-  color:black;
 }
