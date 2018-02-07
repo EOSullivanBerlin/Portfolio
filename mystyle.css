@@ -123,7 +123,7 @@ body {
   background-color: rgba(1 1 1 0.5);
 }
 
-/* grid redacted About/Header */
+/* grid redacted Header */
 .redacted {
   background-size: cover;
   background-image: url('square.jpg');
@@ -180,37 +180,69 @@ body {
   grid-area: base;
 }
 
+#holder-about {
+  padding-top: 60px;
+  margin: 0 auto;
+  height: 900px;
+  display: grid;
+  max-width: 900px;
+  grid-template:  1fr 1fr / 1fr 1fr;
+  grid-template-areas:
+  "top top"
+  "center right";
+   justify-items: stretch;
+   align-tiems: stretch;
+}
+
+#my-story {
+  grid-area: center;
+}
+
+#about-text {
+  grid-area: right;
+  align-self: center
+}
 
 /*Skills */
 
 #skills {
   display: block;
   position: static;
-  height: 1000px;
+  height: 1500px;
   margin: 0 auto;
   background-color: black;
 }
 
 /* grid graph Skills */
 
-#grid-graph {
-  grid-area: left;
-  max-width: 900px;
-  height: 900px;
-  margin: 0 auto;
+#graph-graph {
+  padding-top: 20px;
   display: grid;
-  grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 50px / 50px 1fr 1fr 1fr 1fr 1fr 1fr;
+  max-width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  grid-template: 1fr  /  1fr;
   grid-template-areas:
-  "pro blank3 blank4 blank4 blank blank"
-  "pro blank3 blank5 js blank blank"
-  "pro blank3 html js blank blank"
-  "pro css html js ruby blank2"
-  "pro css html js ruby blank2"
-  "pro css html js ruby mysql"
-  "pro css html js ruby mysql"
-  "pro css html js ruby mysql"
-  "pro css html js ruby mysql"
-  ". css-text html-text js-text ruby-text mysql-text";
+  "grid";
+  justify-items: stretch;
+  align-tiems: stretch;
+}
+
+#grid-graph {
+  grid-area: grid;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "blank3 blank4 blank4 blank blank"
+  "blank3 blank5 js blank blank"
+  "blank3 html js blank blank"
+  "css html js ruby blank2"
+  "css html js ruby blank2"
+  "css html js ruby mysql"
+  "css html js ruby mysql"
+  "css html js ruby mysql"
+  "css html js ruby mysql"
+  "css-text html-text js-text ruby-text mysql-text";
    justify-items: stretch;
    align-tiems: stretch;
    grid-gap: 15px;
@@ -222,9 +254,6 @@ body {
   /* transform: rotate(-90deg); */
 }
 
-.base-block {
-  color: white;
-}
 
 h4 {
   font-weight: bold;
@@ -235,11 +264,6 @@ h4#rotate {
   transform: rotate(-90deg)
 }
 
-#pro {
-  grid-area: pro;
-  align-self: end;
-  justify-self: end;
-}
 
 #css {
   grid-area: css;
@@ -451,16 +475,6 @@ align-self: center;
 
 /* About */
 
-#img-eoin {
-  grid-area: subheader;
-  justify-self: center;
-  align-self: center;
-  background-color: black;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
-}
-
 .subheader {
   grid-area: subsub;
   justify-self: center;
@@ -476,6 +490,15 @@ align-self: center;
 
 .left {
   grid-area: left;
+}
+
+#white-text{
+  color: white;
+}
+
+#white-text-border{
+  color: white;
+  border-bottom: 2px solid white;
 }
 
 #about {
@@ -499,4 +522,10 @@ align-self: center;
   display: block;
   position: static;
   background-color: black;
+}
+
+/* Footer */
+
+.links:hover {
+ filter: invert(100%)
 }
