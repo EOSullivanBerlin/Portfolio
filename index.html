@@ -23,20 +23,20 @@
 
       </header>
 
+
       <ul class='nav_bar'>
         <li><a href='#about'>ABOUT</a></li>
         <li><a href='#skills'>SKILLS</a></li>
         <li><a href='#projects'>PROJECTS</a></li>
         <li><a href='#work'>WORK</a></li>
       </ul>
+
       <div id='container'>
         <div id='about'>
-          <div id='holder'>
-          <h1 id='header'>ABOUT</h1>
+          <div id='holder-about'>
+          <h1 id='black-header'>ABOUT</h1>
           <h2>My Story</h2>
-          <p class='subheader'>I have just graduated from Makers academy, an extremely intensive twelve-week Development Bootcamp. This course emphasised object orientated Design, Test Driven Development and agile Methodologies.
-            I have hands on experience in creating single page application with JavaScript, HTMl, CSS and am familiar wisth React.js. Test-Driven Development is my compass when I have a programming problem. I ardently follow the red, green and refactor cycle.
-            This ensures simple, clean, well-documented and reusable code.
+          <p>I am a full stack JavaScript developer specialising in front end located in the Berlin. After many successful years of working as a script and storyboard artist I wanted to follow my long held ambition of becoming a programer. I love working on projects and seeing them come to life, whether that's a scribble that becomes a storyboard, or a JavaScript snippet that inspires a fully fledged web app. My first step towards my dream job was attending and graduating from Makers Academy. This is a developer bootcamp that emphasises the importance of coding best practices. Next I hope to join a team of talented programers where I can apply my knowledge while I learn all that I can.
           </p>
           </div>
         </div>
@@ -58,41 +58,74 @@
         </div>
 
             <div id='projects'>
-              <h2>PROJECTS</h2>
 
               <div id='holder-num-float'>
 
-                  <h5 class='background1'>01</h5>
-                  <div class='content1'>
-                    <h2>COMMANDOS</h2> <br />
-                    <p>
-                      A bash tool to help new devlopers learn. Tech: Ruby, Shell, Rspec and Aruba<br />
-                      EVIL NOTES<br />
+
+
+                <div class='discription' id='title-projects'>
+                  <h2 class='large-letter'>Projects</h2>
+                  <p>
+                    A selection of coding projects completed while attending Makers Academy. A variety of different technologies were used including Ruby on Rails, Angular.js, Rspec and Jasmine. The project span the full stack.
+                  </p>
+                </div>
+
+
+                  <h5 class='background' id='one'>01</h5>
+                  <div class='content' id='one'>
+                    <h2>COMMANDOS</h2>
+                    <p class='subheading'>A bash tool to help new devlopers learn.
+                    </p><br />
+                    <p class='description'>
+                      Commandos is a unique command line tool and learning aid that monitors commands entered into the bash terminal and suggests helpful tips based on the user's activity. Aimed at the beginner and anyone looking to expand their knowledge of the terminal, it is hoped that use of Commandos will help users to learn new commands, remember them through repetition and ultimately use this knowledge to get more out of the terminal.
+                      Commandos has been developed by a team of 5 students at Makers Academy as part of their final project carried out in less than two weeks.
+                      A bash tool to help new devlopers learn. Tech: Ruby, Shell, Rspec and Aruba
+                    </p><br />
+                    <form action='https://github.com/EOSullivanBerlin/commandos'>
+                      <input type="submit" value="See the code" />
+                    </form>
                   </div>
 
-                  <h5 class='background2'>02</h5>
-                  <div class='content2'>
-                    <h2>COMMANDOS</h2> <br />
-                    <p>
-                      A bash tool to help new devlopers learn. Tech: Ruby, Shell, Rspec and Aruba<br />
-                  </div>
-
-                  <h5 class='background3'>03</h5>
-                  <div class='content3'>
-                    EVIL NOTES<br />
-                    A single page web app that allows a user to make notes. No libraries were used and we created our own testing framework. Tech: JavaScript<br />
-                  </div>
-
-                  <h5 class='background4'>04</h5>
-                  <div class='content4'>
-                    ACEBOOK<br />
-                    A group project that clones Facebook. Tech: Ruby, Rails, PostgreSQL<br />
+                  <h5 class='background' id='quote'>"</h5>
+                  <div class='content' id='quote'>
+                    <p class='quote'> Designs that anticipate specific future requirements almost always end badly.
+                    </p>
+                    <p> - Sandi Metz</p>
                   </div>
 
 
+                  <h5 class='background' id='two'>02</h5>
+                  <div class='content' id='two'>
+                    <h2>EVIL NOTES</h2>
+                    <p class='subheading'>A single page web app that allows a user to make notes.</p><br />
+                    <p class='description'>
+                    The app was built from the ground up, with no external libraries except http-server. We created our own testing frame-work to test drive the application based off Jasmine.
+                    </p>
+                    <form action='https://github.com/EOSullivanBerlin/notes-app'>
+                      <input type="submit" value="See the code" />
+                    </form>
+                  </div>
 
+                  <h5 class='background' id='quote-two'>"</h5>
+                  <div class='content' id='quote-two'>
+                    <p class='quote'> Indeed, the ratio of time spent reading versus writing is well over 10 to 1. We are constantly reading old code as part of the effort to write new code. ...[Therefore,] making it easy to read makes it easier to write.</p>
+                    <p> - Robert C. Martin</p>
+                  </div>
 
-              <img id='img-eoin' src='computer.jpg' alt='computer' />
+                  <h5 class='background' id='three'>03</h5>
+                  <div class='content' id='three'>
+                    <h2>ACEBOOK</h2>
+                    <p class='subheading'>
+                      A group project that clones Facebook.<br />
+                    </p>
+                    <p class='description'>
+                    Our international cohort of 12 programmers from 4 countries working in 2 timezones spent a week making this clone of a popular social media website.
+                    </p>
+                    <form action='https://acebook-remote-july.herokuapp.com/users/sign_in'>
+                      <input type="submit" value="vist the site" />
+                    </form>
+                  </div>
+
             </div>
           </div>
 
@@ -116,14 +149,11 @@
 
       </div>
       <footer>
-
         <h1>THANKS</h1>
-
         <p>What to talk about something?</p>
         <a href='#about' >Contact Me</a>
         <a href='https://github.com/EOSullivanBerlin'>Github</a>
         <a href='https://www.linkedin.com/in/eoin-o-sullivan-00453a154/'>Linked In<a/>
-
         <p id='tiny_script'>Made in Germany by Eoin O Sullivan.</p>
       </footer>
     </div>
