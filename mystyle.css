@@ -1,0 +1,567 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media all and (min-width: 960px) {
+h3{
+    font-size: 70px;
+  }
+  .graph-d{
+    font-size: 30px;
+  }
+}
+
+@media all and (max-width: 959px) and (min-width: 600px) {
+h3{
+    font-size: 8vw;
+  }
+
+.graph-d{
+  font-size: 18px;
+}
+}
+
+@media all and (max-width: 599px) and (min-width: 50px) {
+h3{
+    font-size: 8vw;
+  }
+
+  .graph-d{
+    font-size: 10px;
+  }
+}
+
+
+h1 {
+  text-align: center;
+}
+
+h1#header{
+  color: white;
+  border: 3px solid white;
+}
+
+h1#black-header{
+  color: black;
+  border: 3px solid black;
+  padding: 30px;
+}
+
+h1#work-header{
+  color: white;
+  border: 3px solid white;
+  padding: 30px;
+}
+h2 {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 5em;
+}
+
+
+h3{
+  color: white;
+}
+
+h5{
+  color: yellow;
+  font-size: 50px;
+}
+
+header{
+    height: 900px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: black;
+}
+
+
+footer{
+  text-align: center;
+  height: 130px;
+  background-color: #696969;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+#white-text {
+  color: white;
+}
+
+.nav_bar{
+  background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  padding-top: 10px;
+  text-align: center;
+  border: none;
+
+}
+
+.nav_bar li{
+  margin-top: 10px;
+  display: inline;
+}
+
+.nav_bar a {
+    width: auto;
+    display: inline;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav_bar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.main {
+    margin-top: 0px;
+}
+
+.container {
+  background-color: rgba(1 1 1 0.5);
+}
+
+/* grid redacted Header */
+.redacted {
+  background-size: cover;
+  background-image: url('square.jpg');
+  margin: 0 auto;
+  height: 900px;
+  display: grid;
+  max-width: 900px;
+  grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "empty empty empty empty empty empty empty"
+  "header header header header header header header"
+  "bare bare bare bare bare bare bare"
+  "subhead subhead subhead subhead subhead subhead subhead"
+  "left left left right right right right"
+  "center center center center center sholder sholder"
+  "base base base base base base base"
+  "base base base base base base base";
+}
+
+.black-block {
+  background-color: black;
+}
+
+#bare {
+  grid-area: bare;
+  justify-self: start;
+  align-self: start;
+}
+
+#name{
+  align-self: end;
+  justify-self: end;
+  background-color: black;
+  grid-area: header;
+}
+
+#header {
+  grid-area: header;
+}
+
+#subhead {
+  grid-area: subhead;
+}
+
+#left {
+  grid-area: left;
+}
+
+#center {
+  grid-area: center;
+}
+
+#base {
+  grid-area: base;
+}
+
+/* About */
+
+#holder-about {
+  padding-top: 60px;
+  margin: 0 auto;
+  height: 900px;
+  display: grid;
+  max-width: 900px;
+  grid-template:  0.5fr 1fr / 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "top center center topa"
+  "left left right right";
+   justify-items: stretch;
+   align-tiems: stretch;
+}
+
+.about-title {
+  grid-area: center;
+  justify-self: center;
+  align-self: center;
+}
+
+#my-story {
+  grid-area: left;
+}
+
+#about-text {
+  grid-area: right;
+  align-self: center
+}
+
+/*Skills */
+
+#skills {
+  display: block;
+  position: static;
+  height: 1500px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+/* Skills grid graph */
+
+#graph-graph {
+  padding-top: 20px;
+  display: grid;
+  max-width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  grid-template: 1fr  /  1fr;
+  grid-template-areas:
+  "grid";
+  justify-items: stretch;
+  align-tiems: stretch;
+}
+
+#grid-graph {
+  grid-area: grid;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "blank3 blank4 blank4 blank blank"
+  "blank3 blank5 js blank blank"
+  "blank3 html js blank blank"
+  "css html js ruby blank2"
+  "css html js ruby blank2"
+  "css html js ruby mysql"
+  "css html js ruby mysql"
+  "css html js ruby mysql"
+  "css html js ruby mysql"
+  "css-text html-text js-text ruby-text mysql-text";
+   justify-items: stretch;
+   align-tiems: stretch;
+   grid-gap: 15px;
+}
+
+.white-block {
+  color: black;
+  background-color: white;
+}
+
+
+
+h4#rotate {
+  transform: rotate(-90deg)
+}
+
+
+#css {
+  grid-area: css;
+}
+
+#html {
+  grid-area: html;
+}
+
+#js {
+  grid-area: js;
+}
+
+#ruby {
+  grid-area: ruby;
+}
+
+#mysql {
+  grid-area: mysql;
+}
+
+#lang {
+  grid-area: lang;
+  align-self: center;
+  justify-self: center;
+}
+
+#graph-element {
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.graph-d {
+  font-weight: bold
+  text-align: center;
+  color: white;
+  justify-self: center;
+  align-self: center;
+}
+
+#css-text {
+  grid-area: css-text;
+}
+
+#html-text {
+  grid-area: html-text;
+}
+
+#js-text {
+  grid-area: js-text;
+}
+
+#ruby-text {
+  grid-area: ruby-text;
+}
+
+#mysql-text {
+  grid-area: mysql-text;
+}
+
+#holder-skills {
+  padding-top: 60px;
+  margin: 0 auto;
+  height: 300px;
+  display: grid;
+  max-width: 300px;
+  grid-template:  1fr 1fr / 1fr ;
+  grid-template-areas:
+  "top"
+  "bottom";
+   justify-items: stretch;
+   align-tiems: stretch;
+}
+
+.craftsmanship {
+  grid-area: top;
+}
+
+.text-box {
+  grid-area: bottom;
+}
+
+
+/*  Projects */
+#holder-num-float {
+  background-color: white;
+  padding-top: 60px;
+  margin: 0 auto;
+  height: 3400px;
+  display: grid;
+  max-width: 950px;
+  grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "top center center top2"
+  "header header blank blank"
+  "blank2 subheader blank blank"
+  "blank2 subsub subsub blank3"
+  "left-top left-top right right"
+  "left left bottom bottom"
+  "left left bottom bottom";
+   grid-gap: 20px 20px;
+   justify-items: stretch;
+   align-tiems: stretch;
+}
+
+
+/* formating  for Projects text */
+.section-aim{
+  font-weight: bold;
+}
+
+.subheading{
+  font-weight: lighter;
+  border-bottom: 3px solid black;
+}
+
+.description{
+  font-size: small;
+}
+
+.content {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.background {
+    font-size: 200px;
+}
+
+.quote {
+  font-size: large;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.large-letter {
+  font-size: 4em;
+}
+
+#title-projects{
+  grid-area: center;
+}
+
+#one{
+    grid-area: header;
+}
+
+#quote{
+grid-area: subheader;
+justify-self: center;
+align-self: center;
+}
+
+#quote-two{
+  grid-area: left-top;
+  justify-self: center;
+  align-self: center;
+}
+
+#two{
+  grid-area: subsub;
+  align-self: end ;
+  justify-self: end;
+}
+
+#three {
+  grid-area: bottom;
+  justify-self: center;
+  align-self: center;
+}
+
+
+/* General grid */
+
+#holder {
+  padding-top: 60px;
+  margin: 0 auto;
+  height: 900px;
+  display: grid;
+  max-width: 900px;
+  grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "header header header header"
+  "subheader subheader subheader subheader"
+  "subsub subsub subsub subsub"
+  "left left right right"
+  "left left right right"
+  "left left right right";
+   grid-gap: 20px 20px;
+   justify-items: stretch;
+   align-tiems: stretch;
+}
+
+.graph-parent {
+  grid-area: left;
+}
+
+#text {
+  grid-area: right;
+}
+
+#intro {
+  border-top: 3px solid black;
+}
+
+#subsub {
+  grid-area: subsub;
+  justify-self: center;
+  align-self: center;
+}
+
+#color-box {
+  grid-area: subsub;
+  background-color: #ff6688;
+  border: 5px solid black;
+
+}
+
+#holder h1{
+  font-size: 70px;
+  grid-area: header;
+  justify-self: center;
+  align-self: center;
+}
+
+#holder p#intro{
+  grid-area: subheader;
+}
+
+/* About */
+
+.subheader {
+  grid-area: subsub;
+  justify-self: center;
+  align-self: center;
+  color: white;
+  font-size: 20px;
+}
+
+/* Work */
+.right {
+  grid-area: right;
+}
+
+.left {
+  grid-area: left;
+}
+
+#white-text{
+  color: white;
+}
+
+#white-text-border{
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+#about {
+  height: 1000px;
+  display: block;
+  position: static;
+  background-color: white;
+  background-size: cover;
+  /* background-image: url("cliffs.jpg"); */
+}
+
+#projects {
+  height: 3500px;
+  display: block;
+  position: static;
+  background-color: #white;
+}
+
+#work{
+  height: 1000px;
+  display: block;
+  position: static;
+  background-color: black;
+}
+
+/* Footer */
+
+.links:hover {
+ filter: invert(100%)
+}
