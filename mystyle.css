@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-h3{
-  color: white;
-}
-
-
 @media all and (min-width: 960px) {
 h3{
     font-size: 70px;
@@ -41,8 +36,6 @@ h3{
 
 h1 {
   text-align: center;
-  color: white;
-  padding: 40px;
 }
 
 h1#header{
@@ -53,13 +46,28 @@ h1#header{
 h1#black-header{
   color: black;
   border: 3px solid black;
+  padding: 30px;
+}
+
+h1#work-header{
+  color: white;
+  border: 3px solid white;
+  padding: 30px;
 }
 h2 {
   border-top: 3px solid black;
   border-bottom: 3px solid black;
 }
 
+h4 {
+  font-weight: bold;
+  font-size: 5em;
+}
 
+
+h3{
+  color: white;
+}
 
 h5{
   color: yellow;
@@ -76,12 +84,16 @@ header{
 
 footer{
   text-align: center;
-  height: 200px;
+  height: 130px;
   background-color: #696969;
 }
 
 body {
   font-family: 'Lato', sans-serif;
+}
+
+#white-text {
+  color: white;
 }
 
 .nav_bar{
@@ -180,22 +192,30 @@ body {
   grid-area: base;
 }
 
+/* About */
+
 #holder-about {
   padding-top: 60px;
   margin: 0 auto;
   height: 900px;
   display: grid;
   max-width: 900px;
-  grid-template:  1fr 1fr / 1fr 1fr;
+  grid-template:  0.5fr 1fr / 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "top top"
-  "center right";
+  "top center center topa"
+  "left left right right";
    justify-items: stretch;
    align-tiems: stretch;
 }
 
-#my-story {
+.about-title {
   grid-area: center;
+  justify-self: center;
+  align-self: center;
+}
+
+#my-story {
+  grid-area: left;
 }
 
 #about-text {
@@ -213,7 +233,7 @@ body {
   background-color: black;
 }
 
-/* grid graph Skills */
+/* Skills grid graph */
 
 #graph-graph {
   padding-top: 20px;
@@ -251,14 +271,9 @@ body {
 .white-block {
   color: black;
   background-color: white;
-  /* transform: rotate(-90deg); */
 }
 
 
-h4 {
-  font-weight: bold;
-  font-size: 5em;
-}
 
 h4#rotate {
   transform: rotate(-90deg)
@@ -325,8 +340,30 @@ h4#rotate {
   grid-area: mysql-text;
 }
 
+#holder-skills {
+  padding-top: 60px;
+  margin: 0 auto;
+  height: 300px;
+  display: grid;
+  max-width: 300px;
+  grid-template:  1fr 1fr / 1fr ;
+  grid-template-areas:
+  "top"
+  "bottom";
+   justify-items: stretch;
+   align-tiems: stretch;
+}
 
-/* holder-num-float  / Projects */
+.craftsmanship {
+  grid-area: top;
+}
+
+.text-box {
+  grid-area: bottom;
+}
+
+
+/*  Projects */
 #holder-num-float {
   background-color: white;
   padding-top: 60px;
@@ -381,7 +418,6 @@ h4#rotate {
 .large-letter {
   font-size: 4em;
 }
-/* get an element to act as anothers background */
 
 #title-projects{
   grid-area: center;
@@ -416,7 +452,7 @@ align-self: center;
 }
 
 
-/* grid skills */
+/* General grid */
 
 #holder {
   padding-top: 60px;
